@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul 16 17:00:36 2020
+# Process ID: 8900
+# Current directory: E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.runs/synth_1
+# Command line: vivado.exe -log hdmi_loop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_loop.tcl
+# Log file: E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.runs/synth_1/hdmi_loop.vds
+# Journal file: E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_loop.tcl -notrace

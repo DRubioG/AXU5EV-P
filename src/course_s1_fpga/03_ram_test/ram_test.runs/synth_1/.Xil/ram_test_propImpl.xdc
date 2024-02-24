@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/03_ram_test/ram_test.srcs/constrs_1/new/ram.xdc rfile:../../../ram_test.srcs/constrs_1/new/ram.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE5 [get_ports sys_clk_p]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE14 [get_ports rst_n]

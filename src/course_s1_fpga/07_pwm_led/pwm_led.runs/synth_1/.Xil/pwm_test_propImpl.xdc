@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/07_pwm_led/pwm_led.srcs/constrs_1/new/pwm.xdc rfile:../../../pwm_led.srcs/constrs_1/new/pwm.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE5 [get_ports sys_clk_p]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE14 [get_ports rst_n]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE15 [get_ports led]

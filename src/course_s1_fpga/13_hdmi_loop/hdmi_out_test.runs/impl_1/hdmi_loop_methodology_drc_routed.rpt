@@ -1,0 +1,457 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jul 16 17:02:52 2020
+| Host         : DESKTOP-0FF260C running 64-bit major release  (build 9200)
+| Command      : report_methodology -file hdmi_loop_methodology_drc_routed.rpt -pb hdmi_loop_methodology_drc_routed.pb -rpx hdmi_loop_methodology_drc_routed.rpx
+| Design       : hdmi_loop
+| Device       : xazu5ev-sfvc784-1-i
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 83
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay                          | 27         |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
+| CLKC-54   | Advisory | Pulse Width or Min Period Violation on FD placed in IO | 54         |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[0] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[10] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[11] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[12] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[13] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[14] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[15] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[16] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[17] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[18] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[19] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[1] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[20] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[21] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[22] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[23] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[2] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[3] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[4] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[5] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[6] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[7] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[8] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on vout_data[9] relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on vout_de relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on vout_hs relative to clock(s) vin_clk
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on vout_vs relative to clock(s) vin_clk
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name sys_clk_p -waveform {0.000 2.500} [get_ports sys_clk_p] (Source: E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.srcs/constrs_1/new/system.xdc (Line: 7))
+Previous: create_clock -period 5.000 [get_ports sys_clk_p] (Source: e:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.srcs/sources_1/ip/sys_pll/sys_pll.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name sys_clk_p -waveform {0.000 2.500} [get_ports sys_clk_p] (Source: E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.srcs/constrs_1/new/system.xdc (Line: 7))
+Previous: create_clock -period 5.000 [get_ports sys_clk_p] (Source: e:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/13_hdmi_loop/hdmi_out_test.srcs/sources_1/ip/sys_pll/sys_pll.xdc (Line: 56))
+Related violations: <none>
+
+CLKC-54#1 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[0] is placed in the site HDIOLOGIC_M_X0Y21 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#2 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[0] is placed in the site HDIOLOGIC_M_X0Y21 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#3 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[10] is placed in the site HDIOLOGIC_M_X0Y14 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#4 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[10] is placed in the site HDIOLOGIC_M_X0Y14 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#5 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[11] is placed in the site HDIOLOGIC_S_X0Y14 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#6 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[11] is placed in the site HDIOLOGIC_S_X0Y14 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#7 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[12] is placed in the site HDIOLOGIC_S_X0Y11 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#8 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[12] is placed in the site HDIOLOGIC_S_X0Y11 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#9 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[13] is placed in the site HDIOLOGIC_M_X0Y11 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#10 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[13] is placed in the site HDIOLOGIC_M_X0Y11 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#11 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[14] is placed in the site HDIOLOGIC_S_X0Y9 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#12 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[14] is placed in the site HDIOLOGIC_S_X0Y9 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#13 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[15] is placed in the site HDIOLOGIC_M_X0Y9 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#14 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[15] is placed in the site HDIOLOGIC_M_X0Y9 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#15 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[16] is placed in the site HDIOLOGIC_S_X0Y22 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#16 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[16] is placed in the site HDIOLOGIC_S_X0Y22 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#17 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[17] is placed in the site HDIOLOGIC_M_X0Y22 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#18 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[17] is placed in the site HDIOLOGIC_M_X0Y22 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#19 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[18] is placed in the site HDIOLOGIC_S_X0Y20 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#20 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[18] is placed in the site HDIOLOGIC_S_X0Y20 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#21 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[19] is placed in the site HDIOLOGIC_M_X0Y20 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#22 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[19] is placed in the site HDIOLOGIC_M_X0Y20 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#23 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[1] is placed in the site HDIOLOGIC_S_X0Y21 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#24 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[1] is placed in the site HDIOLOGIC_S_X0Y21 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#25 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[20] is placed in the site HDIOLOGIC_M_X0Y19 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#26 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[20] is placed in the site HDIOLOGIC_M_X0Y19 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#27 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[21] is placed in the site HDIOLOGIC_S_X0Y19 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#28 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[21] is placed in the site HDIOLOGIC_S_X0Y19 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#29 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[22] is placed in the site HDIOLOGIC_S_X0Y1 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#30 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[22] is placed in the site HDIOLOGIC_S_X0Y1 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#31 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[23] is placed in the site HDIOLOGIC_M_X0Y1 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#32 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[23] is placed in the site HDIOLOGIC_M_X0Y1 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#33 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[2] is placed in the site HDIOLOGIC_S_X0Y18 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#34 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[2] is placed in the site HDIOLOGIC_S_X0Y18 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#35 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[3] is placed in the site HDIOLOGIC_M_X0Y5 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#36 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[3] is placed in the site HDIOLOGIC_M_X0Y5 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#37 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[4] is placed in the site HDIOLOGIC_M_X0Y17 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#38 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[4] is placed in the site HDIOLOGIC_M_X0Y17 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#39 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[5] is placed in the site HDIOLOGIC_S_X0Y17 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#40 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[5] is placed in the site HDIOLOGIC_S_X0Y17 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#41 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[6] is placed in the site HDIOLOGIC_S_X0Y5 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#42 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[6] is placed in the site HDIOLOGIC_S_X0Y5 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#43 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[7] is placed in the site HDIOLOGIC_M_X0Y6 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#44 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[7] is placed in the site HDIOLOGIC_M_X0Y6 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#45 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[8] is placed in the site HDIOLOGIC_M_X0Y16 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#46 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[8] is placed in the site HDIOLOGIC_M_X0Y16 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#47 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[9] is placed in the site HDIOLOGIC_S_X0Y16 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#48 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_data_d0_reg[9] is placed in the site HDIOLOGIC_S_X0Y16 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#49 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_de_d0_reg is placed in the site HDIOLOGIC_M_X0Y18 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#50 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_de_d0_reg is placed in the site HDIOLOGIC_M_X0Y18 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#51 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_hs_d0_reg is placed in the site HDIOLOGIC_S_X0Y23 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#52 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_hs_d0_reg is placed in the site HDIOLOGIC_S_X0Y23 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#53 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_vs_d0_reg is placed in the site HDIOLOGIC_M_X0Y23 and has a Min Period Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+CLKC-54#54 Advisory
+Pulse Width or Min Period Violation on FD placed in IO  
+The  Flip-Flop vin_vs_d0_reg is placed in the site HDIOLOGIC_M_X0Y23 and has a Min Pulse Width Violation. The FF can achieve higher performance if moved into the fabric by setting IOB=FALSE or by using an  primitive.
+Related violations: <none>
+
+

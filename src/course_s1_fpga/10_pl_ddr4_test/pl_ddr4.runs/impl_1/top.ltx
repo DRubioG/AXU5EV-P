@@ -1,0 +1,2276 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "66626689"
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "u_ddr4",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "DDR4_SDRAM",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "BE77B94C6B6254359417A480A194404E"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/rd_addr_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_addr_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/rd_data_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/rd_data_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_len",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_len[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/state[2]",
+                                                "parentNetId": 30
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/state[1]",
+                                                "parentNetId": 31
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/state[0]",
+                                                "parentNetId": 32
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/wr_addr_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_addr_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 27,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/app_addr[27]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[26]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[25]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[24]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[23]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[22]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[21]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[20]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[19]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[18]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[17]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[16]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[15]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[14]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[13]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[12]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[11]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[10]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[9]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[8]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[7]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[6]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[5]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[4]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[3]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/wr_data_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/wr_data_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_cmd",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_burst_m0/app_cmd[2]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_cmd[1]"
+                                            },
+                                            {
+                                                "name": "mem_burst_m0/app_cmd[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/test_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/test_cnt[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/test_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 127,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[127]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[126]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[125]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[124]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[123]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[122]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[121]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[120]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[119]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[118]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[117]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[116]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[115]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[114]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[113]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[112]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[111]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[110]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[109]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[108]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[107]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[106]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[105]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[104]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[103]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[102]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[101]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[100]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[99]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[98]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[97]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[96]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[95]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[94]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[93]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[92]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[91]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[90]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[89]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[88]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[87]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[86]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[85]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[84]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[83]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[82]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[81]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[80]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[79]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[78]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[77]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[76]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[75]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[74]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[73]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[72]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[71]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[70]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[69]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[68]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[67]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[66]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[65]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[64]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[63]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[62]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[61]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[60]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[59]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[58]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[57]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[56]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[55]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[54]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[53]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[52]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[51]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[50]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[49]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[48]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[47]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[46]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[45]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[44]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[43]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[42]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[41]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[40]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[39]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[38]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[37]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[36]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[35]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[34]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[33]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[32]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[31]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[30]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[29]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[28]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[27]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[26]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[25]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[24]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[23]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[22]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[21]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[20]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[19]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[18]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[17]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[16]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/state[2]",
+                                                "parentNetId": 238
+                                            },
+                                            {
+                                                "name": "mem_test_m0/state[1]",
+                                                "parentNetId": 239
+                                            },
+                                            {
+                                                "name": "mem_test_m0/state[0]",
+                                                "parentNetId": 240
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 27,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[27]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[26]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[25]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[24]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[23]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[22]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[21]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[20]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[19]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[18]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[17]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[16]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_burst_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_data_pre_add",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/rd_data_pre_add[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 127,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[127]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[126]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[125]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[124]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[123]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[122]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[121]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[120]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[119]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[118]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[117]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[116]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[115]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[114]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[113]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[112]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[111]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[110]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[109]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[108]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[107]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[106]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[105]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[104]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[103]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[102]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[101]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[100]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[99]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[98]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[97]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[96]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[95]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[94]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[93]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[92]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[91]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[90]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[89]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[88]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[87]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[86]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[85]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[84]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[83]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[82]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[81]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[80]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[79]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[78]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[77]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[76]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[75]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[74]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[73]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[72]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[71]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[70]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[69]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[68]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[67]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[66]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[65]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[64]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[63]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[62]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[61]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[60]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[59]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[58]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[57]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[56]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[55]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[54]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[53]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[52]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[51]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[50]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[49]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[48]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[47]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[46]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[45]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[44]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[43]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[42]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[41]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[40]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[39]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[38]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[37]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[36]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[35]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[34]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[33]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[32]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[31]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[30]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[29]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[28]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[27]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[26]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[25]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[24]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[23]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[22]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[21]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[20]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[19]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[18]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[17]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[16]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_len",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_len[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 27,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[27]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[26]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[25]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[24]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[23]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[22]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[21]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[20]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[19]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[18]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[17]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[16]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_burst_addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe18",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_data_pre_add",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[15]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[14]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[13]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[12]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[11]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[10]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[9]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[8]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[7]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[6]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[5]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[4]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[3]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[2]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[1]"
+                                            },
+                                            {
+                                                "name": "mem_test_m0/wr_data_pre_add[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe19",
+                                "id": 19,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_en",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe20",
+                                "id": 20,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 20,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_rd_data_end",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe21",
+                                "id": 21,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_rdy",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe22",
+                                "id": 22,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_wdf_end",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe23",
+                                "id": 23,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "mem_burst_m0/app_wdf_rdy",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe24",
+                                "id": 24,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 24,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/error",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe25",
+                                "id": 25,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 25,
+                                "nets": [
+                                    {
+                                        "name": "init_calib_complete",
+                                        "isBus": false,
+                                        "parentNetId": 483
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe26",
+                                "id": 26,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 26,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_data_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe27",
+                                "id": 27,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 27,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_finish",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe28",
+                                "id": 28,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 28,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/rd_burst_req",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe29",
+                                "id": 29,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 29,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_data_req",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe30",
+                                "id": 30,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 30,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_finish",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe31",
+                                "id": 31,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "mem_test_m0/wr_burst_req",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 30,
+                        "name": "mem_burst_m0/state[2]",
+                        "state_reg": [
+                            {
+                                "name": "mem_burst_m0/state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "MEM_READ_WAIT",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_FIRST_READ",
+                                        "val": "111"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "READ_END",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_WAIT",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "WRITE_END",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 31,
+                        "name": "mem_burst_m0/state[1]",
+                        "state_reg": [
+                            {
+                                "name": "mem_burst_m0/state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "MEM_READ_WAIT",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_FIRST_READ",
+                                        "val": "111"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "READ_END",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_WAIT",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "WRITE_END",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 32,
+                        "name": "mem_burst_m0/state[0]",
+                        "state_reg": [
+                            {
+                                "name": "mem_burst_m0/state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "MEM_READ_WAIT",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_FIRST_READ",
+                                        "val": "111"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "READ_END",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_WAIT",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "WRITE_END",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 238,
+                        "name": "mem_test_m0/state[2]",
+                        "state_reg": [
+                            {
+                                "name": "mem_test_m0/state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 239,
+                        "name": "mem_test_m0/state[1]",
+                        "state_reg": [
+                            {
+                                "name": "mem_test_m0/state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 240,
+                        "name": "mem_test_m0/state[0]",
+                        "state_reg": [
+                            {
+                                "name": "mem_test_m0/state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 483,
+                        "name": "u_ddr4/inst/u_ddr4_mem_intfc/u_ddr_cal_top/calDone_gated_reg_0",
+                        "state_reg": [
+                            {
+                                "name": "mem_burst_m0/state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "MEM_READ",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "MEM_READ_WAIT",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_FIRST_READ",
+                                        "val": "111"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "READ_END",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "MEM_WRITE_WAIT",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "WRITE_END",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

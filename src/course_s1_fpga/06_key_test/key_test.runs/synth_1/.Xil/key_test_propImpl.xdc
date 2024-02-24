@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:E:/XilinxPrj/AXU5EVB/2020/course_s1_fpga/06_key_test/key_test.srcs/constrs_1/new/key.xdc rfile:../../../key_test.srcs/constrs_1/new/key.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE5 [get_ports sys_clk_p]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE15 [get_ports led]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE14 [get_ports key]

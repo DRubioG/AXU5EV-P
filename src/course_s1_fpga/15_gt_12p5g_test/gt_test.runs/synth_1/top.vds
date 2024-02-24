@@ -1,0 +1,473 @@
+#-----------------------------------------------------------
+# Vivado v2020.1_AR75334_AR75389 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Aug 30 16:22:15 2021
+# Process ID: 4884
+# Current directory: E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/top.vds
+# Journal file: E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xczu5ev-sfvc784-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1572.059 ; gain = 79.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33458]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33458]
+INFO: [Synth 8-6157] synthesizing module 'reset_0' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reset_0' (2#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/reset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sys_clock' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/sys_clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clock' (3#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/sys_clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'packet_send' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/packet_send.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND_IDLE bound to: 1 - type: integer 
+	Parameter SEND_CORRECTION bound to: 2 - type: integer 
+	Parameter SEND_DUMMY bound to: 3 - type: integer 
+	Parameter SEND_HEADER bound to: 4 - type: integer 
+	Parameter SEND_SEQ_NUM bound to: 5 - type: integer 
+	Parameter SEND_CTRL bound to: 6 - type: integer 
+	Parameter SEND_DATA bound to: 7 - type: integer 
+	Parameter SEND_CHECK bound to: 8 - type: integer 
+	Parameter SEND_DATA_END bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'packet_send' (4#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/packet_send.v:1]
+INFO: [Synth 8-6157] synthesizing module 'packet_rec' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/packet_rec.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter WAIT_HEADER bound to: 1 - type: integer 
+	Parameter SEQ_NUM bound to: 3 - type: integer 
+	Parameter CTRL bound to: 4 - type: integer 
+	Parameter DATA bound to: 5 - type: integer 
+	Parameter CHECK bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'word_align' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/word_align.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'word_align' (5#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/word_align.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'packet_rec' (6#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/packet_rec.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:150]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (7#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_top' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:58]
+	Parameter ST_LINK_DOWN bound to: 1'b0 
+	Parameter ST_LINK_UP bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:32977]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (8#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:32977]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (9#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33169]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (10#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33169]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_reset_synchronizer' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_reset_sync.v:58]
+	Parameter FREQUENCY bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_reset_synchronizer' (11#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_reset_sync.v:58]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:706]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:721]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_bit_synchronizer' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_bit_sync.v:58]
+	Parameter INITIALIZE bound to: 5'b00000 
+	Parameter FREQUENCY bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_bit_synchronizer' (12#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_bit_sync.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_init' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_init.v:59]
+	Parameter P_FREERUN_FREQUENCY bound to: 50.000000 - type: double 
+	Parameter P_TX_TIMER_DURATION_US bound to: 30000.000000 - type: double 
+	Parameter P_RX_TIMER_DURATION_US bound to: 130000.000000 - type: double 
+	Parameter ST_START bound to: 2'b00 
+	Parameter ST_TX_WAIT bound to: 2'b01 
+	Parameter ST_RX_WAIT bound to: 2'b10 
+	Parameter ST_MONITOR bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_init' (13#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_init.v:59]
+INFO: [Synth 8-6157] synthesizing module 'gt_vio_0' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/gt_vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gt_vio_0' (14#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/gt_vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_wrapper' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_wrapper.v:57]
+	Parameter P_CHANNEL_ENABLE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000 
+	Parameter P_TX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
+	Parameter P_RX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gt_example_gtwiz_userclk_tx' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_gtwiz_userclk_tx.v:60]
+	Parameter P_CONTENTS bound to: 0 - type: integer 
+	Parameter P_FREQ_RATIO_SOURCE_TO_USRCLK bound to: 1 - type: integer 
+	Parameter P_FREQ_RATIO_USRCLK_TO_USRCLK2 bound to: 1 - type: integer 
+	Parameter P_USRCLK_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK_DIV bound to: 3'b000 
+	Parameter P_USRCLK2_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK2_DIV bound to: 3'b000 
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1259]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (15#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1259]
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_gtwiz_userclk_tx' (16#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_gtwiz_userclk_tx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gt_example_gtwiz_userclk_rx' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_gtwiz_userclk_rx.v:60]
+	Parameter P_CONTENTS bound to: 0 - type: integer 
+	Parameter P_FREQ_RATIO_SOURCE_TO_USRCLK bound to: 1 - type: integer 
+	Parameter P_FREQ_RATIO_USRCLK_TO_USRCLK2 bound to: 1 - type: integer 
+	Parameter P_USRCLK_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK_DIV bound to: 3'b000 
+	Parameter P_USRCLK2_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK2_DIV bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_gtwiz_userclk_rx' (17#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_gtwiz_userclk_rx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gt' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/gt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gt' (18#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/.Xil/Vivado-4884-DESKTOP-0FF260C/realtime/gt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_wrapper' (19#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_wrapper.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gt_vio_0_inst'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:926]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'example_init_inst'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'gt_example_top' (20#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.v:58]
+WARNING: [Synth 8-7071] port 'tx1_clk' of module 'gt_example_top' is unconnected for instance 'gt_exdes_m0' [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:167]
+WARNING: [Synth 8-7023] instance 'gt_exdes_m0' of module 'gt_example_top' has 24 connections declared, but only 23 given [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:167]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'packet_rec_m0'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:122]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u0'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:150]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'packet_rec_m1'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:137]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gt_exdes_m0'. This will prevent further optimization [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'top' (21#1) [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/new/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1629.199 ; gain = 136.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1647.070 ; gain = 154.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1647.070 ; gain = 154.422
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1659.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/reset_0/reset_0/reset_0_in_context.xdc] for cell 'tx_reset_m0'
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/reset_0/reset_0/reset_0_in_context.xdc] for cell 'tx_reset_m0'
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/reset_0/reset_0/reset_0_in_context.xdc] for cell 'rx_reset_m0'
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/reset_0/reset_0/reset_0_in_context.xdc] for cell 'rx_reset_m0'
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt_vio_0/gt_vio_0/gt_vio_0_in_context.xdc] for cell 'gt_exdes_m0/gt_vio_0_inst'
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt_vio_0/gt_vio_0/gt_vio_0_in_context.xdc] for cell 'gt_exdes_m0/gt_vio_0_inst'
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/sys_clock/sys_clock/sys_clock_in_context.xdc] for cell 'sys_clock_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/sys_clock/sys_clock/sys_clock_in_context.xdc:2]
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/sys_clock/sys_clock/sys_clock_in_context.xdc] for cell 'sys_clock_m0'
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc] for cell 'gt_exdes_m0/example_wrapper_inst/gt_inst'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:6]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:8]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:10]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc:12]
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc] for cell 'gt_exdes_m0/example_wrapper_inst/gt_inst'
+Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u0'
+Finished Parsing XDC File [e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u0'
+Parsing XDC File [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/imports/gt_example_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1760.727 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rx_reset_m0' at clock pin 'slowest_sync_clk' is different from the actual clock period '3.200', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'tx_reset_m0' at clock pin 'slowest_sync_clk' is different from the actual clock period '3.200', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u0' at clock pin 'clk' is different from the actual clock period '3.200', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'gt_exdes_m0/gt_vio_0_inst' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'gt_exdes_m0/example_wrapper_inst/gt_inst' at clock pin 'gtwiz_reset_clk_freerun_in[0]' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1760.727 ; gain = 268.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5ev-sfvc784-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1760.727 ; gain = 268.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for RXN_IN[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RXN_IN[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for RXN_IN[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RXN_IN[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for RXP_IN[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RXP_IN[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for RXP_IN[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RXP_IN[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for TXN_OUT[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TXN_OUT[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for TXN_OUT[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TXN_OUT[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for TXP_OUT[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TXP_OUT[0]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for TXP_OUT[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TXP_OUT[1]. (constraint file  e:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.srcs/sources_1/ip/gt/gt/gt_in_context.xdc, line 28).
+Applied set_property DONT_TOUCH = true for rx_reset_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tx_reset_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for gt_exdes_m0/gt_vio_0_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sys_clock_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for gt_exdes_m0/example_wrapper_inst/gt_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1760.727 ; gain = 268.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'packet_send'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'packet_rec'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_init_reg' in module 'gt_example_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                        000000001 |                             0000
+         SEND_CORRECTION |                        000000010 |                             0010
+              SEND_DUMMY |                        000000100 |                             0011
+             SEND_HEADER |                        000001000 |                             0100
+            SEND_SEQ_NUM |                        000010000 |                             0101
+               SEND_CTRL |                        000100000 |                             0110
+               SEND_DATA |                        001000000 |                             0111
+           SEND_DATA_END |                        010000000 |                             1001
+              SEND_CHECK |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'packet_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+             WAIT_HEADER |                              001 |                              001
+                 SEQ_NUM |                              010 |                              011
+                    CTRL |                              011 |                              100
+                    DATA |                              100 |                              101
+                   CHECK |                              101 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'packet_rec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_START |                               00 |                               00
+              ST_TX_WAIT |                               01 |                               01
+              ST_RX_WAIT |                               10 |                               10
+              ST_MONITOR |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_init_reg' using encoding 'sequential' in module 'gt_example_init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1760.727 ; gain = 268.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 14    
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                1 Bit    Registers := 115   
++---Muxes : 
+	   9 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 2     
+	   9 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1760.727 ; gain = 268.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2312.211 ; gain = 819.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |gt_vio_0      |         1|
+|2     |gt            |         1|
+|3     |reset_0       |         2|
+|4     |sys_clock     |         1|
+|5     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |gt          |     1|
+|2     |gt_vio      |     1|
+|3     |ila         |     1|
+|4     |reset       |     1|
+|5     |reset_0_    |     1|
+|6     |sys_clock   |     1|
+|7     |BUFG        |     1|
+|8     |BUFG_GT     |     2|
+|9     |CARRY8      |    53|
+|10    |IBUFDS_GTE4 |     1|
+|11    |LUT1        |    11|
+|12    |LUT2        |   176|
+|13    |LUT3        |    83|
+|14    |LUT4        |    50|
+|15    |LUT5        |   125|
+|16    |LUT6        |   126|
+|17    |FDCE        |   453|
+|18    |FDPE        |    75|
+|19    |FDRE        |   332|
+|20    |FDSE        |     2|
+|21    |IBUF        |     1|
+|22    |IBUFGDS     |     1|
+|23    |OBUF        |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2370.195 ; gain = 763.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2370.195 ; gain = 877.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2370.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. gt_exdes_m0/ibuf_hb_gtwiz_reset_all_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2378.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2378.453 ; gain = 1306.758
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/serdes/AXU5EV_P/gt_12p5g_test/gt_test.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 30 16:23:14 2021...
