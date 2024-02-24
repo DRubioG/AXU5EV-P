@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.xst" -ofn "E:/Project/AN9767/verilog/ad9767_ax516/ad9767_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9767_test_map.ncd ad9767_test.ngd ad9767_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9767_test_map.ncd ad9767_test.ncd ad9767_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9767_test.twx ad9767_test.ncd -o ad9767_test.twr ad9767_test.pcf -ucf ad9767_test.ucf 
+bitgen -intstyle ise -f ad9767_test.ut ad9767_test.ncd 

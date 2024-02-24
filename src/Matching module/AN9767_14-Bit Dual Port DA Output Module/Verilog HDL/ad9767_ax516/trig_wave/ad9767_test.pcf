@@ -1,0 +1,57 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 03 11:42:52 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "da2_data<10>" LOCATE = SITE "T6" LEVEL 1;
+COMP "da2_data<11>" LOCATE = SITE "V6" LEVEL 1;
+COMP "da2_data<12>" LOCATE = SITE "U7" LEVEL 1;
+COMP "da2_data<13>" LOCATE = SITE "V7" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "da1_data<0>" LOCATE = SITE "R10" LEVEL 1;
+COMP "da1_data<1>" LOCATE = SITE "T10" LEVEL 1;
+COMP "da1_data<2>" LOCATE = SITE "U11" LEVEL 1;
+COMP "da1_data<3>" LOCATE = SITE "V11" LEVEL 1;
+COMP "da1_data<4>" LOCATE = SITE "T12" LEVEL 1;
+COMP "da1_data<5>" LOCATE = SITE "V12" LEVEL 1;
+COMP "da1_data<6>" LOCATE = SITE "U13" LEVEL 1;
+COMP "da1_data<7>" LOCATE = SITE "V13" LEVEL 1;
+COMP "da1_data<8>" LOCATE = SITE "U15" LEVEL 1;
+COMP "da1_data<9>" LOCATE = SITE "V15" LEVEL 1;
+COMP "da1_wrt" LOCATE = SITE "P8" LEVEL 1;
+COMP "da1_clk" LOCATE = SITE "N7" LEVEL 1;
+COMP "da2_wrt" LOCATE = SITE "U8" LEVEL 1;
+COMP "da2_clk" LOCATE = SITE "V8" LEVEL 1;
+COMP "da2_data<0>" LOCATE = SITE "T9" LEVEL 1;
+COMP "da2_data<1>" LOCATE = SITE "V9" LEVEL 1;
+COMP "da2_data<2>" LOCATE = SITE "M8" LEVEL 1;
+COMP "da2_data<3>" LOCATE = SITE "N8" LEVEL 1;
+COMP "da2_data<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "da2_data<5>" LOCATE = SITE "N9" LEVEL 1;
+COMP "da2_data<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "da1_data<10>" LOCATE = SITE "U16" LEVEL 1;
+COMP "da2_data<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "da1_data<11>" LOCATE = SITE "V16" LEVEL 1;
+COMP "da2_data<8>" LOCATE = SITE "N10" LEVEL 1;
+COMP "da1_data<12>" LOCATE = SITE "M11" LEVEL 1;
+COMP "da2_data<9>" LOCATE = SITE "P11" LEVEL 1;
+COMP "da1_data<13>" LOCATE = SITE "N11" LEVEL 1;
+PIN PLL_inst/clkout1_buf_pin<1> = BEL "PLL_inst/clkout1_buf" PINNAME O;
+PIN "PLL_inst/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN PLL_inst/clkout2_buf_pin<1> = BEL "PLL_inst/clkout2_buf" PINNAME O;
+PIN "PLL_inst/clkout2_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+TIMEGRP PLL_inst_clkfx = BEL "trig_data_0" BEL "trig_data_1" BEL "trig_data_2"
+        BEL "trig_data_3" BEL "trig_data_4" BEL "trig_data_5" BEL
+        "trig_data_6" BEL "trig_data_7" BEL "trig_data_8" BEL "trig_data_9"
+        BEL "trig_data_10" BEL "trig_data_11" BEL "trig_data_12" BEL
+        "trig_data_13" BEL "da1_clk" BEL "da1_wrt" BEL "da2_clk" BEL "da2_wrt"
+        BEL "PLL_inst/clkout2_buf";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN PLL_inst/dcm_sp_inst_pins<3> = BEL "PLL_inst/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP sys_clk = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "PLL_inst/dcm_sp_inst_pins<3>";
+TS_sys_clk = PERIOD TIMEGRP "sys_clk" 50 MHz HIGH 50%;
+TS_PLL_inst_clkfx = PERIOD TIMEGRP "PLL_inst_clkfx" TS_sys_clk * 2.5 HIGH 50%;
+SCHEMATIC END;
+

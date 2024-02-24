@@ -1,0 +1,4 @@
+1. sin_wave: Generate dual channel positive wave waveform.
+2. trig_wave: Generate a two-channel triangle wave waveform
+3. The AN9767 module is connected to the J1 expansion port of the AX301. 
+If you want to connect to J2, you need to modify the pin definitions. 

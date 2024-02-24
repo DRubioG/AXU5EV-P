@@ -1,0 +1,46 @@
+NET clk						  	LOC = V10 | IOSTANDARD = "LVCMOS33";       ## system CLK 
+Net clk TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk 50 MHz;
+
+#NET rst_n                  LOC = N4 | IOSTANDARD = "LVCMOS15"; ## 1
+
+
+#DA1相关引脚
+NET "da1_clk"   LOC = N7 |  IOSTANDARD = LVCMOS33;
+NET "da1_wrt"   LOC = P8 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[13]"   LOC = N11 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[12]"   LOC = M11 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[11]"   LOC = V16 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[10]"   LOC = U16 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[9]"   LOC = V15 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[8]"   LOC = U15 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[7]"   LOC = V13 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[6]"   LOC = U13 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[5]"   LOC = V12 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[4]"   LOC = T12 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[3]"   LOC = V11 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[2]"   LOC = U11 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[1]"   LOC = T10 |  IOSTANDARD = LVCMOS33;
+NET "da1_data[0]"   LOC = R10 |  IOSTANDARD = LVCMOS33;
+
+
+#DA2相关引脚
+NET "da2_clk"   LOC = V8 |  IOSTANDARD = LVCMOS33;
+NET "da2_wrt"   LOC = U8 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[13]"   LOC = V7 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[12]"   LOC = U7 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[11]"   LOC = V6 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[10]"   LOC = T6 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[9]"   LOC = P11 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[8]"   LOC = N10 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[7]"   LOC = T11 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[6]"   LOC = R11 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[5]"   LOC = N9 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[4]"   LOC = M10 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[3]"   LOC = N8 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[2]"   LOC = M8 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[1]"   LOC = V9 |  IOSTANDARD = LVCMOS33;
+NET "da2_data[0]"   LOC = T9 |  IOSTANDARD = LVCMOS33;
+
+PIN "PLL_inst/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "PLL_inst/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;

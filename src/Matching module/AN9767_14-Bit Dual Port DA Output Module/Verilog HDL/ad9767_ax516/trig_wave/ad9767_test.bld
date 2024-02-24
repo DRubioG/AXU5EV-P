@@ -1,0 +1,44 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9767_test.ucf -p
+xc6slx16-csg324-2 ad9767_test.ngc ad9767_test.ngd
+
+Reading NGO file
+"E:/Project/AN9767/CD/CD/verilog/ad9767_ax516/trig_wave/ad9767_test.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "ad9767_test.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk', used in period specification
+   'TS_sys_clk', was traced into DCM_SP instance PLL_inst/dcm_sp_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_PLL_inst_clkfx = PERIOD "PLL_inst_clkfx" TS_sys_clk * 2.5
+   HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 163020 kilobytes
+
+Writing NGD file "ad9767_test.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "ad9767_test.bld"...

@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/PLL.v"
+verilog work "ad9767_test.v"

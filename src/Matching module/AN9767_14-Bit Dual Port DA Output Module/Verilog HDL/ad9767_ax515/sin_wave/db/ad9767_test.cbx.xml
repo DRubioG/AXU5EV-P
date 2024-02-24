@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ad9767_test">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ad9767_test|PLL:PLL_inst|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ad9767_test|ROM:ROM_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_h891.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

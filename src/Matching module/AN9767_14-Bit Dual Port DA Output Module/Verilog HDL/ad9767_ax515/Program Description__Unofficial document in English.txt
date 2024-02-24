@@ -1,0 +1,4 @@
+1. sin_wave: Generate dual channel positive wave waveform.
+2. trig_wave: Generate a two-channel triangle wave waveform
+3. The AN9767 module is connected to the J2 expansion port of AX515. 
+If you want to connect other expansion ports, you need to modify the pin definitions. 
