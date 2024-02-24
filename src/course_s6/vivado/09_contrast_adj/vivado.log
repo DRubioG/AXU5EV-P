@@ -1,0 +1,450 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov  2 14:41:34 2020
+# Process ID: 9732
+# Current directory: F:/course_s3_hls/vivado/08_contrast_adj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15404 F:\course_s3_hls\vivado\08_contrast_adj\contrast_adj.xpr
+# Log file: F:/course_s3_hls/vivado/08_contrast_adj/vivado.log
+# Journal file: F:/course_s3_hls/vivado/08_contrast_adj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.xpr
+INFO: [Project 1-313] Project file moved from 'F:/course_s3_hls/vivado/10_edge_detector' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/edge_detector'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2020.1/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1081.316 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_150m
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:v_gamma_lut:1.0 - v_gamma_lut_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:user:cpu_reg_v1_0:1.0 - cpu_reg_v1_0_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:hls:edge_detector:1.0 - edge_detector_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_vdma_0/Data_S2MM.
+Successfully read diagram <design_1> from BD file <F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1655.617 ; gain = 0.000
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/edge_detector'.
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets axis_subset_converter_0_m_axis_tvalid] [get_bd_nets axis_subset_converter_0_m_axis_tdata] [get_bd_nets axis_subset_converter_0_m_axis_tstrb] [get_bd_nets axis_subset_converter_0_m_axis_tid] [get_bd_nets axis_subset_converter_0_m_axis_tdest] [get_bd_intf_nets edge_detector_0_dst] [get_bd_nets axis_subset_converter_0_m_axis_tuser] [get_bd_nets edge_detector_0_src_TREADY] [get_bd_nets axis_subset_converter_0_m_axis_tkeep] [get_bd_nets axis_subset_converter_0_m_axis_tlast] [get_bd_nets cpu_reg_v1_0_0_reg_out4] [get_bd_cells edge_detector_0]
+set_property  ip_repo_paths  f:/course_s3_hls/vivado/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+set_property  ip_repo_paths  {f:/course_s3_hls/vivado/ip_repo F:/course_s3_hls/hls/contrastadj} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/contrastadj'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:contrastadj:1.0 contrastadj_0
+endgroup
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tdata] [get_bd_pins contrastadj_0/src_axi_TDATA]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tdata is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TDATA is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tvalid] [get_bd_pins contrastadj_0/src_axi_TVALID]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TVALID is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tkeep] [get_bd_pins contrastadj_0/src_axi_TKEEP]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tkeep is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TKEEP is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tuser] [get_bd_pins contrastadj_0/src_axi_TUSER]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tuser is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TUSER is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tlast] [get_bd_pins contrastadj_0/src_axi_TLAST]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tlast is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TLAST is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tid] [get_bd_pins contrastadj_0/src_axi_TID]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TID is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tdest] [get_bd_pins contrastadj_0/src_axi_TDEST]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tdest is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TDEST is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tready] [get_bd_pins contrastadj_0/src_axi_TREADY]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TREADY is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_net [get_bd_pins axis_subset_converter_0/m_axis_tstrb] [get_bd_pins contrastadj_0/src_axi_TSTRB]
+WARNING: [BD 41-1306] The connection to interface pin /axis_subset_converter_0/m_axis_tstrb is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /contrastadj_0/src_axi_TSTRB is being overridden by the user. This pin will not be connected as a part of interface connection src_axi
+connect_bd_intf_net [get_bd_intf_pins contrastadj_0/dst_axi] [get_bd_intf_pins axis_subset_converter_1/S_AXIS]
+connect_bd_net [get_bd_pins contrastadj_0/adj_ap_vld] [get_bd_pins axis_subset_converter_0/m_axis_tuser]
+connect_bd_net [get_bd_pins contrastadj_0/adj] [get_bd_pins cpu_reg_v1_0_0/reg_out7]
+connect_bd_net [get_bd_pins contrastadj_0/ap_clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins contrastadj_0/ap_rst_n] [get_bd_pins proc_sys_reset_150m/peripheral_aresetn]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: f:/course_s3_hls/hls/contrastadj/contrastadj/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/contrastadj'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  design_1_contrastadj_0_0] -log ip_upgrade.log
+Upgrading 'F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_contrastadj_0_0 (Contrastadj 1.0) from revision 2011021501 to revision 2011021507
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'ap_ctrl'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_contrastadj_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ap_done'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ap_idle'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ap_ready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ap_start'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_contrastadj_0_0'. These changes may impact your design.
+WARNING: [IP_Flow 19-5891] Detected address segment differences while upgrading 'design_1_contrastadj_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_contrastadj_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/course_s3_hls/vivado/08_contrast_adj/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <F:\course_s3_hls\vivado\08_contrast_adj\contrast_adj.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/course_s3_hls/vivado/08_contrast_adj/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_contrastadj_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_1/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_1/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_interconnect_0/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_interconnect_0/s00_couplers/auto_us/M_AXI(0)
+Wrote  : <F:\course_s3_hls\vivado\08_contrast_adj\contrast_adj.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_csi2_rx_subsyst_0/video_out_tdest'(10) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TDATA'(24) to pin '/axis_subset_converter_0/m_axis_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TKEEP'(3) to pin '/axis_subset_converter_0/m_axis_tkeep'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TSTRB'(3) to pin '/axis_subset_converter_0/m_axis_tstrb'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_csi2_rx_subsyst_0/video_out_tdest'(10) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TDATA'(24) to pin '/axis_subset_converter_0/m_axis_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TKEEP'(3) to pin '/axis_subset_converter_0/m_axis_tkeep'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TSTRB'(3) to pin '/axis_subset_converter_0/m_axis_tstrb'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+WARNING: [IP_Flow 19-519] IP 'design_1_contrastadj_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contrastadj_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc .
+Exporting to file F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 14ed14a097a8b512; cache size = 58.186 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3f5e74dea79c61dd; cache size = 58.186 MB.
+[Mon Nov  2 15:09:05 2020] Launched design_1_contrastadj_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_contrastadj_0_0_synth_1: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/design_1_contrastadj_0_0_synth_1/runme.log
+synth_1: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/synth_1/runme.log
+[Mon Nov  2 15:09:05 2020] Launched impl_1...
+Run output will be captured here: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2024.020 ; gain = 0.000
+report_ip_status -name ip_status 
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: f:/course_s3_hls/hls/contrastadj/contrastadj/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/contrastadj'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:contrastadj:1.0 [get_ips  design_1_contrastadj_0_0] -log ip_upgrade.log
+Upgrading 'F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_contrastadj_0_0 (Contrastadj 1.0) from revision 2011021507 to revision 2011021523
+Wrote  : <F:\course_s3_hls\vivado\08_contrast_adj\contrast_adj.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/course_s3_hls/vivado/08_contrast_adj/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_contrastadj_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_1/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_1/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_interconnect_0/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_interconnect_0/s00_couplers/auto_us/M_AXI(0)
+Wrote  : <F:\course_s3_hls\vivado\08_contrast_adj\contrast_adj.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_csi2_rx_subsyst_0/video_out_tdest'(10) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TDATA'(24) to pin '/axis_subset_converter_0/m_axis_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TKEEP'(3) to pin '/axis_subset_converter_0/m_axis_tkeep'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TSTRB'(3) to pin '/axis_subset_converter_0/m_axis_tstrb'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to pin: '/mipi_csi2_rx_subsyst_0/video_out_tdest'(10) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TDATA'(24) to pin '/axis_subset_converter_0/m_axis_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TKEEP'(3) to pin '/axis_subset_converter_0/m_axis_tkeep'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/contrastadj_0/src_axi_TSTRB'(3) to pin '/axis_subset_converter_0/m_axis_tstrb'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+WARNING: [IP_Flow 19-519] IP 'design_1_contrastadj_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contrastadj_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc .
+Exporting to file F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 14ed14a097a8b512; cache size = 97.255 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3f5e74dea79c61dd; cache size = 97.255 MB.
+[Mon Nov  2 15:24:21 2020] Launched design_1_contrastadj_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_contrastadj_0_0_synth_1: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/design_1_contrastadj_0_0_synth_1/runme.log
+synth_1: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/synth_1/runme.log
+[Mon Nov  2 15:24:21 2020] Launched impl_1...
+Run output will be captured here: F:/course_s3_hls/vivado/08_contrast_adj/contrast_adj.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2205.266 ; gain = 0.000
+report_ip_status -name ip_status 
+close_project
+open_project F:/course_s3_hls/vivado/01_led_control/led_control.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/01_led_control/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2020.1/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-09:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2205.266 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2811.523 ; gain = 606.258
+set_property PROGRAM.FILE {F:/course_s3_hls/vivado/01_led_control/led_control.runs/impl_2/top.bit} [get_hw_devices xczu3_0]
+current_hw_device [get_hw_devices xczu3_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu3_0] 0]
+INFO: [Labtools 27-1434] Device xczu3 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu3_0]
+set_property PROBES.FILE {} [get_hw_devices xczu3_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xczu3_0]
+set_property PROGRAM.FILE {F:/course_s3_hls/vivado/01_led_control/led_control.runs/impl_2/top.bit} [get_hw_devices xczu3_0]
+program_hw_devices [get_hw_devices xczu3_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xczu3_0] 0]
+INFO: [Labtools 27-1434] Device xczu3 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_project
+open_project F:/course_s3_hls/vivado/02_led_register/led_register.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/02_led_register/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2020.1/Vivado/2020.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_cpu_reg_v1_0_0_0
+
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_bd_design {F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:user:cpu_reg_v1_0:1.0 - cpu_reg_v1_0_0
+Adding component instance block -- xilinx.com:hls:led_register:1.0 - led_register_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Successfully read diagram <design_1> from BD file <F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/design_1.bd>
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:cpu_reg_v1_0:1.0 [get_ips  design_1_cpu_reg_v1_0_0_0] -log ip_upgrade.log
+Upgrading 'F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_cpu_reg_v1_0_0_0 from cpu_reg_v1_0_v1_0 1.0 to cpu_reg_v1_0_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out10'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out11'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out12'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out13'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out14'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out15'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out5'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out6'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out7'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out8'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg_out9'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_cpu_reg_v1_0_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_cpu_reg_v1_0_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/course_s3_hls/vivado/02_led_register/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <F:\course_s3_hls\vivado\02_led_register\led_register.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/course_s3_hls/vivado/02_led_register/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_cpu_reg_v1_0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+Wrote  : <F:\course_s3_hls\vivado\02_led_register\led_register.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cpu_reg_v1_0_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = a73c6a63bab32294; cache size = 3.147 MB.
+[Mon Nov  2 15:47:55 2020] Launched design_1_cpu_reg_v1_0_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_cpu_reg_v1_0_0_0_synth_1: F:/course_s3_hls/vivado/02_led_register/led_register.runs/design_1_cpu_reg_v1_0_0_0_synth_1/runme.log
+synth_1: F:/course_s3_hls/vivado/02_led_register/led_register.runs/synth_1/runme.log
+[Mon Nov  2 15:47:55 2020] Launched impl_1...
+Run output will be captured here: F:/course_s3_hls/vivado/02_led_register/led_register.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3584.188 ; gain = 1.508
+report_ip_status -name ip_status 
+close_project
+open_project F:/course_s3_hls/vivado/06_video_on_video/video_on_video.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/06_video_on_video/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/hls/overlaystream'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2020.1/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 3584.188 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {F:/course_s3_hls/vivado/06_video_on_video/video_on_video.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_150M
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.0 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:v_gamma_lut:1.0 - v_gamma_lut_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:user:cpu_reg_v1_0:1.0 - cpu_reg_v1_0_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:hls:overlaystream:1.0 - overlaystream_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_vdma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_vdma_0/Data_S2MM.
+Successfully read diagram <design_1> from BD file <F:/course_s3_hls/vivado/06_video_on_video/video_on_video.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+reset_run synth_1
+reset_run design_1_v_demosaic_0_0_synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 3
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_demosaic_0_0, cache-ID = 2a70f65a55a535a2; cache size = 202.108 MB.
+[Mon Nov  2 15:49:49 2020] Launched design_1_v_demosaic_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_demosaic_0_0_synth_1: F:/course_s3_hls/vivado/06_video_on_video/video_on_video.runs/design_1_v_demosaic_0_0_synth_1/runme.log
+synth_1: F:/course_s3_hls/vivado/06_video_on_video/video_on_video.runs/synth_1/runme.log
+[Mon Nov  2 15:49:49 2020] Launched impl_2...
+Run output will be captured here: F:/course_s3_hls/vivado/06_video_on_video/video_on_video.runs/impl_2/runme.log
+export_ip_user_files -of_objects  [get_files F:/course_s3_hls/vivado/06_video_on_video/video_on_video.srcs/sources_1/new/broadcast.v] -no_script -reset -force -quiet
+remove_files  F:/course_s3_hls/vivado/06_video_on_video/video_on_video.srcs/sources_1/new/broadcast.v
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+close_project
+open_project F:/course_s3_hls/vivado/02_led_register/led_register.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/02_led_register/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2020.1/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cpu_reg_v1_0_0_0' generated file not found 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_cpu_reg_v1_0_0_0/design_1_cpu_reg_v1_0_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cpu_reg_v1_0_0_0' generated file not found 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_cpu_reg_v1_0_0_0/design_1_cpu_reg_v1_0_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cpu_reg_v1_0_0_0' generated file not found 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_cpu_reg_v1_0_0_0/design_1_cpu_reg_v1_0_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cpu_reg_v1_0_0_0' generated file not found 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_cpu_reg_v1_0_0_0/design_1_cpu_reg_v1_0_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cpu_reg_v1_0_0_0' generated file not found 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_cpu_reg_v1_0_0_0/design_1_cpu_reg_v1_0_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+open_bd_design {F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:led_register:1.0 - led_register_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:user:cpu_reg_v1_0:1.0 - cpu_reg_v1_0_0
+Successfully read diagram <design_1> from BD file <F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_nets cpu_reg_v1_0_0_reg_out3] [get_bd_nets cpu_reg_v1_0_0_reg_out4] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells cpu_reg_v1_0_0]
+set_property  ip_repo_paths  f:/course_s3_hls/vivado/02_led_register/hls [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/02_led_register/hls'.
+set_property  ip_repo_paths  {f:/course_s3_hls/vivado/02_led_register/hls F:/course_s3_hls/vivado/ip_repo} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/02_led_register/hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/course_s3_hls/vivado/ip_repo'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:cpu_reg_v1_0:1.0 cpu_reg_v1_0_0
+endgroup
+set_property location {3.5 1087 484} [get_bd_cells cpu_reg_v1_0_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M00_AXI] [get_bd_intf_pins cpu_reg_v1_0_0/s00_axi]
+connect_bd_net [get_bd_pins cpu_reg_v1_0_0/s00_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins cpu_reg_v1_0_0/s00_axi_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins cpu_reg_v1_0_0/reg_out3] [get_bd_pins led_register_0/total_cnt]
+connect_bd_net [get_bd_pins cpu_reg_v1_0_0/reg_out4] [get_bd_pins led_register_0/high_cnt]
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Slave segment </cpu_reg_v1_0_0/s00_axi/reg0> is not assigned into address space </zynq_ultra_ps_e_0/Data>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+assign_bd_address
+Slave segment '/cpu_reg_v1_0_0/s00_axi/reg0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+save_bd_design
+Wrote  : <F:\course_s3_hls\vivado\02_led_register\led_register.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+Wrote  : <F:\course_s3_hls\vivado\02_led_register\led_register.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cpu_reg_v1_0_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/course_s3_hls/vivado/02_led_register/led_register.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = a73c6a63bab32294; cache size = 3.147 MB.
+[Mon Nov  2 16:07:04 2020] Launched design_1_cpu_reg_v1_0_0_1_synth_1, synth_1...
+Run output will be captured here:
+design_1_cpu_reg_v1_0_0_1_synth_1: F:/course_s3_hls/vivado/02_led_register/led_register.runs/design_1_cpu_reg_v1_0_0_1_synth_1/runme.log
+synth_1: F:/course_s3_hls/vivado/02_led_register/led_register.runs/synth_1/runme.log
+[Mon Nov  2 16:07:05 2020] Launched impl_1...
+Run output will be captured here: F:/course_s3_hls/vivado/02_led_register/led_register.runs/impl_1/runme.log
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 16:58:24 2020...

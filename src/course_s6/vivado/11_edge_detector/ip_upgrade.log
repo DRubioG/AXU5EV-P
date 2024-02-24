@@ -1,0 +1,840 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_zynq_ultra_ps_e_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_zynq_ultra_ps_e_0_0 (xilinx.com:ip:zynq_ultra_ps_e:3.3 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_zynq_ultra_ps_e_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'emio_gpio_i' width 95 differs from original width 1
+
+-Upgraded port 'emio_gpio_o' width 95 differs from original width 1
+
+-Upgraded port 'emio_gpio_t' width 95 differs from original width 1
+
+
+3. Upgrade messages
+-------------------
+
+Set parameter PSU__GPIO_EMIO__PERIPHERAL__IO to value 95 (source 'default')
+WARNING: upgrade cannot add parameter PSU__USE__USB3_0_HUB with default value 0 : a parameter called PSU__USE__USB3_0_HUB already exists in zynq_ultra_ps_e_v3_3
+WARNING: upgrade cannot add parameter PSU__USE__USB3_1_HUB with default value 0 : a parameter called PSU__USE__USB3_1_HUB already exists in zynq_ultra_ps_e_v3_3
+Set parameter PSU__PROTECTION__FPD_SEGMENTS to value SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |  SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem (source 'default')
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_gamma_lut_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_gamma_lut_0_0 (xilinx.com:ip:v_gamma_lut:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_demosaic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_demosaic_0_0 (xilinx.com:ip:v_demosaic:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mipi_csi2_rx_subsyst_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_mipi_csi2_rx_subsyst_0_0 (xilinx.com:ip:mipi_csi2_rx_subsystem:5.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0 (Rev. 2011021422)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cpu_reg_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_cpu_reg_v1_0_0_0 (xilinx.com:user:cpu_reg_v1_0:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_subset_converter_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axis_subset_converter_1_0 (xilinx.com:ip:axis_subset_converter:1.1 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_subset_converter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axis_subset_converter_0_0 (xilinx.com:ip:axis_subset_converter:1.1 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_vdma_0_0 (xilinx.com:ip:axi_vdma:6.3 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_interconnect_1_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Nov  5 13:13:49 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu5ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_interconnect_0_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_zynq_ultra_ps_e_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_zynq_ultra_ps_e_0_0 (xilinx.com:ip:zynq_ultra_ps_e:3.3 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_zynq_ultra_ps_e_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'emio_gpio_i' width 95 differs from original width 1
+
+-Upgraded port 'emio_gpio_o' width 95 differs from original width 1
+
+-Upgraded port 'emio_gpio_t' width 95 differs from original width 1
+
+
+3. Upgrade messages
+-------------------
+
+Set parameter PSU__GPIO_EMIO__PERIPHERAL__IO to value 95 (source 'default')
+WARNING: upgrade cannot add parameter PSU__USE__USB3_0_HUB with default value 0 : a parameter called PSU__USE__USB3_0_HUB already exists in zynq_ultra_ps_e_v3_3
+WARNING: upgrade cannot add parameter PSU__USE__USB3_1_HUB with default value 0 : a parameter called PSU__USE__USB3_1_HUB already exists in zynq_ultra_ps_e_v3_3
+Set parameter PSU__PROTECTION__FPD_SEGMENTS to value SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem (source 'default')
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_gamma_lut_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_gamma_lut_0_0 (xilinx.com:ip:v_gamma_lut:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_demosaic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_demosaic_0_0 (xilinx.com:ip:v_demosaic:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mipi_csi2_rx_subsyst_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_mipi_csi2_rx_subsyst_0_0 (xilinx.com:ip:mipi_csi2_rx_subsystem:5.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0 (Rev. 2011021422)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cpu_reg_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_cpu_reg_v1_0_0_0 (xilinx.com:user:cpu_reg_v1_0:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_subset_converter_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axis_subset_converter_1_0 (xilinx.com:ip:axis_subset_converter:1.1 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_subset_converter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axis_subset_converter_0_0 (xilinx.com:ip:axis_subset_converter:1.1 (Rev. 21)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_vdma_0_0 (xilinx.com:ip:axi_vdma:6.3 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_interconnect_1_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Nov  4 18:33:55 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu4ev-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_interconnect_0_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Nov  2 14:22:53 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010231015) to (Rev. 2011021422)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_edge_detector_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'threshold_ap_vld'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Oct 23 10:15:58 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010230954) to (Rev. 2010231015)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Oct 23 09:54:50 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010230935) to (Rev. 2010230954)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Oct 23 09:36:41 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010230916) to (Rev. 2010230935)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Oct 23 09:16:51 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_2 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221851) to (Rev. 2010230916)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 18:51:56 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0 (Rev. 2010221817)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 18:19:19 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221800) to (Rev. 2010221817)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_edge_detector_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'threshold' width 32 differs from original width 8
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 18:01:02 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221743) to (Rev. 2010221800)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 17:43:42 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221729) to (Rev. 2010221743)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 17:30:59 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221719) to (Rev. 2010221729)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 22 17:19:35 2020
+| Host         : DESKTOP-AOVMD3L running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edge_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edge_detector_0_0 (xilinx.com:hls:edge_detector:1.0) from (Rev. 2010221105) to (Rev. 2010221719)
+

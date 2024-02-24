@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-656] Deadlocks can occur since process Loop_VITIS_LOOP_339_1_proc is instantiated in a dataflow region with ap_ctrl_none or without start propagation and contains a non-flushable pipeline." projectName="erosion" solutionName="solution1" date="2020-11-04T16:15:12.757+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="erosion" solutionName="solution1" date="2020-11-04T16:15:12.524+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1019] Consider increasing the depth of PIPO kernel_2 (from Loop_VITIS_LOOP_339_1_proc_U0 to xferode_1080_1920_3_9_1_0_1921_3_3_U0) to 3 to improve performance and/or avoid deadlocks." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:48.596+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1019] Consider increasing the depth of PIPO kernel_1 (from Loop_VITIS_LOOP_339_1_proc_U0 to xferode_1080_1920_3_9_1_0_1921_3_3_U0) to 3 to improve performance and/or avoid deadlocks." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:48.474+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1019] Consider increasing the depth of PIPO kernel_0 (from Loop_VITIS_LOOP_339_1_proc_U0 to xferode_1080_1920_3_9_1_0_1921_3_3_U0) to 3 to improve performance and/or avoid deadlocks." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:48.461+0800" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buf_2_V' will be ignored if a simpler one can be used." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:44.621+0800" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buf_0_V' will be ignored if a simpler one can be used." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:44.411+0800" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buf_1_V' will be ignored if a simpler one can be used." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:44.151+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'YCrCb2rgb&lt;1080, 1920>' to 'YCrCb2rgb_1080_1920_s'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:25.920+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>' to 'xferode_1080_1920_3_9_1_0_1921_3_3_s'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:24.698+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2YCrCb&lt;1080, 1920>' to 'rgb2YCrCb_1080_1920_s'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:14:24.672+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-915] Ignore complete array partition directive on 'buf.V.2' (source/erosion.cpp:174) in dimension 1: conflict with resource constraint assignment." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:43.945+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-915] Ignore complete array partition directive on 'buf.V.1' (source/erosion.cpp:174) in dimension 1: conflict with resource constraint assignment." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:43.552+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-915] Ignore complete array partition directive on 'buf.V.0' (source/erosion.cpp:174) in dimension 1: conflict with resource constraint assignment." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:43.540+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-939] Pipeline directive for loop 'VITIS_LOOP_214_3' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>' has been removed because the loop is unrolled completely.&#xD;&#xA;Resolution: For help on HLS 200-939 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-939.html" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:43.039+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 1080 for loop 'Row_Loop' (source/erosion.cpp:47:62) in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.895+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 1921 for loop 'Col_Loop' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.858+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 3 to 1 for loop 'init_boarder' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.847+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 1920 for loop 'VITIS_LOOP_214_3' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.835+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 1921 to 1920 for loop 'VITIS_LOOP_214_3' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.824+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 1920 for loop 'VITIS_LOOP_197_2' (F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:453:46) in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.813+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 1921 to 1920 for loop 'VITIS_LOOP_197_2' (F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:453:46) in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.802+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 3 for loop 'VITIS_LOOP_182_1' in function 'xferode&lt;1080, 1920, 3, 9, 1, 0, 1921, 3, 3>'." projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:42.791+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access (source/erosion.cpp:343:16)" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:41.776+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: source/erosion.cpp:176:9" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:27.707+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'shift_x': source/erosion.cpp:50:35" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.251+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'P0': source/erosion.cpp:47:62" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.243+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: F:/xilinx_2020.1/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.235+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'index': F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1386:34" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.228+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'index': F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1183:102" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.220+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'index': F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:675:60" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.213+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5324] unused parameter 'index': F:/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:655:87" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.207+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file source/erosion.cpp&#xD;&#xA;Resolution: For help on HLS 200-471 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-471.html" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:24.200+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: source/erosion.cpp:339:2&#xD;&#xA;Resolution: For help on HLS 214-114 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/214-114.html" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:21.667+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: source/erosion.cpp:350:57&#xD;&#xA;Resolution: For help on HLS 214-113 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/214-113.html" projectName="erosion" solutionName="solution1" date="2020-11-04T16:13:21.660+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
