@@ -1,0 +1,15 @@
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+
+set_property PACKAGE_PIN AH10      [get_ports {RS485_0_RXD}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_0_RXD}]
+set_property PACKAGE_PIN AG10      [get_ports {RS485_0_TXD}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_0_TXD}]
+set_property PACKAGE_PIN A10      [get_ports {RS485_0_DE_tri_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_0_DE_tri_o}]
+
+set_property PACKAGE_PIN AH12      [get_ports {RS485_1_RXD}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_1_RXD}]
+set_property PACKAGE_PIN AH11      [get_ports {RS485_1_TXD}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_1_TXD}]
+set_property PACKAGE_PIN B11      [get_ports {RS485_1_DE_tri_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {RS485_1_DE_tri_o}]

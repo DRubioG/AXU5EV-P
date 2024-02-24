@@ -1,0 +1,294 @@
+
+*** Running vivado
+    with args -log design_1_axi_ethernet_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_ethernet_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_ethernet_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_ethernet_0_0 -part xazu5ev-sfvc784-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xazu5ev'
+INFO: [Device 21-403] Loading part xazu5ev-sfvc784-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14048
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1532.910 ; gain = 232.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ethernet_0_0' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/synth/design_1_axi_ethernet_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_c_counter_binary_0_0' [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_c_counter_binary_0_0' (1#1) [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_c_counter_binary_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Q' of module 'bd_929b_c_counter_binary_0_0' is unconnected for instance 'c_counter_binary_0' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:289]
+WARNING: [Synth 8-7023] instance 'c_counter_binary_0' of module 'bd_929b_c_counter_binary_0_0' has 4 connections declared, but only 3 given [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:289]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_c_shift_ram_0_0' [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_c_shift_ram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_c_shift_ram_0_0' (2#1) [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_c_shift_ram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_eth_buf_0' [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_eth_buf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_eth_buf_0' (3#1) [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_eth_buf_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'RESET2PCSPMA' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7071] port 'PHY_RST_N' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7071] port 'mdio_o_top' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7071] port 'mdio_t_top' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7071] port 'mdc_top' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7071] port 'mdio_i_temac' of module 'bd_929b_eth_buf_0' is unconnected for instance 'eth_buf' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+WARNING: [Synth 8-7023] instance 'eth_buf' of module 'bd_929b_eth_buf_0' has 102 connections declared, but only 96 given [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:299]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0' [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_mac_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0' (4#1) [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_mac_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rx_axis_filter_tuser' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'tx_enable' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_vector' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_valid' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'speedis100' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'inband_link_status' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'inband_clock_speed' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7071] port 'inband_duplex_status' of module 'bd_929b_mac_0' is unconnected for instance 'mac' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+WARNING: [Synth 8-7023] instance 'mac' of module 'bd_929b_mac_0' has 62 connections declared, but only 54 given [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:396]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_util_vector_logic_0_0' [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_util_vector_logic_0_0' (5#1) [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/.Xil/Vivado-12276-DESKTOP-0FF260C/realtime/bd_929b_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_xlconstant_0_0' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_4/synth/bd_929b_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (6#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_xlconstant_0_0' (7#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_4/synth/bd_929b_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b' (8#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/synth/bd_929b.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ethernet_0_0' (9#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/synth/design_1_axi_ethernet_0_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1588.031 ; gain = 287.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1605.898 ; gain = 305.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1605.898 ; gain = 305.043
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1605.898 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_0/bd_929b_eth_buf_0/bd_929b_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_0/bd_929b_eth_buf_0/bd_929b_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc] for cell 'inst/mac'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc:6]
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc] for cell 'inst/mac'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_2/bd_929b_c_shift_ram_0_0/bd_929b_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_2/bd_929b_c_shift_ram_0_0/bd_929b_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_3/bd_929b_c_counter_binary_0_0/bd_929b_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_3/bd_929b_c_counter_binary_0_0/bd_929b_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_5/bd_929b_util_vector_logic_0_0/bd_929b_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_5/bd_929b_util_vector_logic_0_0/bd_929b_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/synth/design_1_axi_ethernet_0_0_ooc.xdc] for cell 'inst'
+WARNING: [Constraints 18-619] A clock with name 'rgmii_rxc' already exists, overwriting the previous clock with the same name. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/synth/design_1_axi_ethernet_0_0_ooc.xdc:39]
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/synth/design_1_axi_ethernet_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/design_1_axi_ethernet_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/design_1_axi_ethernet_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1657.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1657.781 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1657.781 ; gain = 356.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xazu5ev-sfvc784-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1657.781 ; gain = 356.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/bd_929b_mac_0/bd_929b_mac_0_in_context.xdc, line 30).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/eth_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/mac. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/c_shift_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1657.781 ; gain = 356.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1657.781 ; gain = 356.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1657.781 ; gain = 356.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'rgmii_rxc'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2098.102 ; gain = 797.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2098.102 ; gain = 797.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2117.668 ; gain = 816.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_929b_c_counter_binary_0_0  |         1|
+|2     |bd_929b_c_shift_ram_0_0       |         1|
+|3     |bd_929b_eth_buf_0             |         1|
+|4     |bd_929b_mac_0                 |         1|
+|5     |bd_929b_util_vector_logic_0_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_929b_c_counter_binary_0  |     1|
+|2     |bd_929b_c_shift_ram_0       |     1|
+|3     |bd_929b_eth_buf             |     1|
+|4     |bd_929b_mac                 |     1|
+|5     |bd_929b_util_vector_logic_0 |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2122.453 ; gain = 769.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2122.453 ; gain = 821.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2122.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2157.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2163.734 ; gain = 1090.988
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/design_1_axi_ethernet_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_ethernet_0_0, cache-ID = 07817a0ecc7bd7f2
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/design_1_axi_ethernet_0_0_synth_1/design_1_axi_ethernet_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_ethernet_0_0_utilization_synth.rpt -pb design_1_axi_ethernet_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 16 15:51:31 2020...

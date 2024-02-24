@@ -1,0 +1,18 @@
+set_property SRC_FILE_INFO {cfile:e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/14_rs485_test/vivado/rs485.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc rfile:../../../rs485.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc id:1 order:EARLY scoped_inst:design_1_i/zynq_ultra_ps_e_0} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/14_rs485_test/vivado/rs485.srcs/constrs_1/new/rs485.xdc rfile:../../../rs485.srcs/constrs_1/new/rs485.xdc id:2} [current_design]
+current_instance design_1_i/zynq_ultra_ps_e_0
+set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 10.000 [get_ports {}]
+current_instance
+set_property src_info {type:XDC file:2 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AH10      [get_ports {RS485_0_RXD}]
+set_property src_info {type:XDC file:2 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AG10      [get_ports {RS485_0_TXD}]
+set_property src_info {type:XDC file:2 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A10      [get_ports {RS485_0_DE_tri_o}]
+set_property src_info {type:XDC file:2 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AH12      [get_ports {RS485_1_RXD}]
+set_property src_info {type:XDC file:2 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AH11      [get_ports {RS485_1_TXD}]
+set_property src_info {type:XDC file:2 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B11      [get_ports {RS485_1_DE_tri_o}]

@@ -1,0 +1,8 @@
+the_ROM_image:
+{
+	[bootloader] ../design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf //FSBL
+  	../design_1_wrapper/hw/design_1_wrapper.bit //FPGA bit
+	[destination_cpu=a53-0] ../cpu0_app/Debug/cpu0_app.elf		//cpu0 elf
+	[destination_cpu=a53-1] ../cpu1_app/Debug/cpu1_app.elf		//cpu1 elf
+
+}

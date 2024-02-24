@@ -1,0 +1,533 @@
+
+*** Running vivado
+    with args -log bd_929b_mac_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_929b_mac_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source bd_929b_mac_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1118.805 ; gain = 61.867
+Command: synth_design -top bd_929b_mac_0 -part xazu5ev-sfvc784-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xazu5ev'
+INFO: [Device 21-403] Loading part xazu5ev-sfvc784-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1526.438 ; gain = 232.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_support' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_support.v:66]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_support_resets' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_support_resets.v:56]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_block_reset_sync' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/common/bd_929b_mac_0_block_reset_sync.v:66]
+	Parameter INITIALISE bound to: 1'b1 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (1#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_block_reset_sync' (2#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/common/bd_929b_mac_0_block_reset_sync.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_support_resets' (3#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_support_resets.v:56]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35056]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (4#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35056]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_block' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_block.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_clk_en_gen' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clk_en_gen.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_block_sync_block' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/common/bd_929b_mac_0_block_sync_block.v:63]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:13724]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (5#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:13724]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_block_sync_block' (6#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/common/bd_929b_mac_0_block_sync_block.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_clk_en_gen' (7#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clk_en_gen.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_rgmii_v2_0_if' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/physical/bd_929b_mac_0_rgmii_v2_0_if.v:68]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:46314]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (8#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:46314]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:32977]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (9#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:32977]
+INFO: [Synth 8-6157] synthesizing module 'ODDRE1' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49835]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ODDRE1' (10#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49835]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49940]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 333.333000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3' (11#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49940]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35155]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 333.333000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (12#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35155]
+INFO: [Synth 8-6157] synthesizing module 'IDDRE1' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:34986]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter IS_CB_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'IDDRE1' (13#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:34986]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3__parameterized0' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49940]
+	Parameter CASCADE bound to: MASTER - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 875 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 333.333000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3__parameterized0' (13#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:49940]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3__parameterized0' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35155]
+	Parameter CASCADE bound to: SLAVE_END - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 333.333000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3__parameterized0' (13#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:35155]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (14#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_rgmii_v2_0_if' (15#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/physical/bd_929b_mac_0_rgmii_v2_0_if.v:68]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_axi4_lite_ipif_wrapper' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-638] synthesizing module 'bd_929b_mac_0_axi4_lite_ipif_top' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_axi4_lite_ipif_top.vhd:107]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_RANGE_SIZE bound to: 32'b00000000000000000000011111111111 
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (16#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (17#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (18#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'bd_929b_mac_0_axi4_lite_ipif_top' (19#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_axi4_lite_ipif_top.vhd:107]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_axi4_lite_ipif_wrapper' (20#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-6157] synthesizing module 'bd_929b_mac_0_vector_decode' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/statistics/bd_929b_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_vector_decode' (21#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/statistics/bd_929b_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (37#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (37#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (37#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (37#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (37#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39247]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (50#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized0' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized0' (50#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized1' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized1' (51#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:70602]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (52#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (52#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (52#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (52#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:39205]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78059]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (53#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78059]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_block' (57#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_block.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0_support' (58#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_support.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'bd_929b_mac_0' (59#1) [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.v:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1674.695 ; gain = 381.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1692.563 ; gain = 398.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1692.563 ; gain = 398.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1704.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_board.xdc] for cell 'inst'
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:105]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:107]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:109]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:111]
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_929b_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_929b_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/bd_929b_mac_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/bd_929b_mac_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst' of design 'preSynthElab_1' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:28]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:28]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst' of design 'preSynthElab_1' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:29]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:42]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:43]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:46]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst' of design 'preSynthElab_1' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:52]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst' of design 'preSynthElab_1' [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:53]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:62]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:63]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc:66]
+Finished Parsing XDC File [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_929b_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_929b_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1809.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 174 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 6 instances
+  ODDRE1 => OSERDESE3: 6 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1810.238 ; gain = 0.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.238 ; gain = 516.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xazu5ev-sfvc784-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.238 ; gain = 516.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/bd_929b_mac_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.238 ; gain = 516.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'idelay_reset_cnt_reg' in module 'bd_929b_mac_0_support_resets'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_16_tx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_16_rx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_16_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'tri_mode_ethernet_mac_v9_0_16_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'tri_mode_ethernet_mac_v9_0_16_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                    0000000000001 |                             0000
+                 iSTATE5 |                    0000000000010 |                             0001
+                 iSTATE1 |                    0000000000100 |                             0010
+                  iSTATE |                    0000000001000 |                             0011
+                 iSTATE0 |                    0000000010000 |                             0100
+                iSTATE11 |                    0000000100000 |                             0101
+                iSTATE10 |                    0000001000000 |                             0110
+                 iSTATE8 |                    0000010000000 |                             0111
+                 iSTATE9 |                    0000100000000 |                             1000
+                 iSTATE7 |                    0001000000000 |                             1001
+                 iSTATE4 |                    0010000000000 |                             1010
+                 iSTATE3 |                    0100000000000 |                             1011
+                 iSTATE2 |                    1000000000000 |                             1100
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'idelay_reset_cnt_reg' using encoding 'one-hot' in module 'bd_929b_mac_0_support_resets'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_16_tx_axi_intf', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0000 |                             0000
+                   LOAD1 |                             0001 |                             0001
+                   LOAD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                END_LOAD |                             0100 |                             0100
+              CLEAR_PIPE |                             0101 |                             0101
+                 RELOAD1 |                             0110 |                             0110
+                 RELOAD2 |                             0111 |                             0111
+                    SEND |                             1000 |                             1000
+                   BURST |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                     PKT |                               11 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_16_rx_axi_intf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+        TRANSMIT_REQUEST |                              010 |                              010
+            TRANSMITTING |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_16_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             1000 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             0010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_v9_0_16_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                               00
+                   P_REQ |                               01 |                               01
+                  P_WAIT |                               10 |                               10
+                  P_HOLD |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_16_pfc_tx_cntl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1810.238 ; gain = 516.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1810.238 ; gain = 516.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 75 of e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:75]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 83 of e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc. [e:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.srcs/sources_1/bd/design_1/ip/design_1_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_929b_mac_0.xdc:83]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 2133.336 ; gain = 839.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 2263.977 ; gain = 970.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin txgen/CRC_CE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin rxgen/CRC_CE_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:05 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:05 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY8     |    11|
+|3     |IDDRE1     |     5|
+|4     |IDELAYCTRL |     1|
+|5     |IDELAYE3   |     6|
+|7     |LUT1       |    31|
+|8     |LUT2       |   254|
+|9     |LUT3       |   281|
+|10    |LUT4       |   241|
+|11    |LUT5       |   328|
+|12    |LUT6       |   557|
+|13    |MUXF7      |     5|
+|14    |MUXF8      |     2|
+|15    |ODDRE1     |     6|
+|16    |ODELAYE3   |     6|
+|18    |RAM64X1D   |   160|
+|19    |SRL16E     |    24|
+|20    |FDCE       |    26|
+|21    |FDPE       |    25|
+|22    |FDRE       |  2631|
+|23    |FDSE       |   141|
+|24    |IBUF       |     6|
+|25    |OBUF       |     6|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 2274.008 ; gain = 980.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:57 . Memory (MB): peak = 2274.008 ; gain = 862.668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 2274.008 ; gain = 980.344
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2274.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2283.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 174 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 6 instances
+  ODDRE1 => OSERDESE3: 6 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:18 . Memory (MB): peak = 2283.094 ; gain = 1164.289
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/bd_929b_mac_0_synth_1/bd_929b_mac_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_929b_mac_0, cache-ID = d6fa050629ae165e
+INFO: [Coretcl 2-1174] Renamed 176 cell refs.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU5EVB/2020/course_s2_standalone/15_pl_net/vivado/pl_net.runs/bd_929b_mac_0_synth_1/bd_929b_mac_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_929b_mac_0_utilization_synth.rpt -pb bd_929b_mac_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 16 15:50:43 2020...
